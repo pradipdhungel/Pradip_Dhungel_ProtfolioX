@@ -419,38 +419,41 @@
         <div class="row">
 
             <div class="col-lg-6 col-md-6 col-12">
-                <form action="#" method="get" class="contact-form webform" role="form">
+                <form action="#" method="get" class="contact-form webform" role="form" onsubmit="return validateForm()">
 
                     <div class="form-group d-flex flex-column-reverse">
                         <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
                         <label for="cf-name" class="webform-label">Full Name*</label>
+                        <span id="name-error" class="error-message"></span>
                     </div>
 
                     <div class="form-group d-flex flex-column-reverse">
                         <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
                         <label for="cf-email" class="webform-label">Your Email*</label>
+                        <span id="email-error" class="error-message"></span>
                     </div>
+
                     <div class="form-group d-flex flex-column-reverse">
                         <input type="text" class="form-control" name="cf-phone" id="cf-phone" placeholder="Your phone">
-
                         <label for="cf-phone" class="webform-label">Your phone Use digit with/without + sign*</label>
+                        <span id="phone-error" class="error-message"></span>
                     </div>
+
                     <div class="form-group d-flex flex-column-reverse">
                         <input type="text" class="form-control" name="cf-subject" id="cf-subject" placeholder="subject">
-
                         <label for="cf-subject" class="webform-label">Subject*</label>
+                        <span id="subject-error" class="error-message"></span>
                     </div>
 
                     <div class="form-group d-flex flex-column-reverse">
-                        <textarea class="form-control" rows="5" name="cf-message" id="cf-message"
-                                  placeholder="Your Message"></textarea>
-
+                        <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
                         <label for="cf-message" class="webform-label">Message*</label>
+                        <span id="message-error" class="error-message"></span>
                     </div>
+
                     <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
                 </form>
+
             </div>
 
             <div class="mx-auto col-lg-4 col-md-6 col-12">
@@ -483,6 +486,7 @@
     </div>
 </section>
 <!-- SCRIPTS -->
+<script src="js/validation.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
