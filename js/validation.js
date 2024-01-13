@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!validateForm()) {
             event.preventDefault(); // Prevent form submission if validation fails
         }
+
     });
 
     // Add event listeners to input fields for real-time validation
