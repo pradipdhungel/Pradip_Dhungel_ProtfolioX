@@ -2,19 +2,19 @@
 
 ## 1. Template Selection
 - Initially, a template was chosen for the project, likely for a website or application.
-![img.png](img.png)
+![img.png](images/img.png)
 
 
 
 ## 2. GitHub Setup
 - GitHub repository was set up to host the project's source code.
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 -  Creating a repository and pushing the code to GitHub https://github.com/pradipdhungel/Pradip_Dhungel_ProtfolioX
 
 
 ## 3. S3 Bucket Creation
 - An S3 (Simple Storage Service) bucket on AWS was created.
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 - This bucket is intended to store and manage project assets and files.
 
 ## 4. AWS Credentials Configuration in GitHub
@@ -27,19 +27,19 @@
 - These credentials are used for authentication and authorization when interacting with AWS services, particularly S3.
 ## 5. CloudFront Setup
 - CloudFront distribution was created to deliver content with low latency and high data transfer speeds.
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 ## 6. IAM (Identity and Access Management) Configuration
 - IAM was set up to manage access to AWS services securely.
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 ## 7. Certificate Manager
 - AWS Certificate Manager was used to manage SSL/TLS certificates for secure communication.
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 ## 8. Route 53 Configuration
 - Route 53, AWS's scalable domain name system (DNS) web service, was configured to manage domain names.
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 ## 9. Domain Acquisition
 - A domain was acquired from GoDaddy for $1.17 to associate with the project.
-![img_7.png](img_7.png)
+![img_7.png](images/img_7.png)
 ## 10. Backend Implementation
 - AWS Lambda functions will be utilized for backend functionality.
 
