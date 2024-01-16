@@ -1,7 +1,7 @@
 # Project Setup Overview
 
 ## 1. Template Selection
-- Initially, a template was chosen for the project, likely for a website or application.
+- Initially, a template was chosen for the project, likely for a website(https://www.pradipdhungel.online/).
 ![img.png](images/img.png)
 
 
