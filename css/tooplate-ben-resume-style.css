@@ -593,6 +593,7 @@ a:hover {
     .hero-text {
         position: relative;
         top: 1.5rem;
+        text-align: center;
     }
 }
 
