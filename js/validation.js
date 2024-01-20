@@ -42,8 +42,8 @@ function validateForm() {
         document.getElementById('email-error').innerText = 'Please enter a valid email address.';
         return false;
     }
-
-    if (phone.trim() === '') {
+    var phoneRegex = /^\d{10}$/;
+    if (phone && !phoneRegex.test(phone)) {
         document.getElementById('phone-error').innerText = 'Please enter your phone number.';
         return false;
     }
@@ -89,8 +89,10 @@ function validateEmail() {
 
 function validatePhone() {
     var phone = document.getElementById('cf-phone').value;
-    var phoneError = document.getElementById('phone-error');
-    phoneError.innerText = phone.trim() === '' ? 'Please enter your phone number.' : '';
+    if(phone){
+        var phoneError = document.getElementById('phone-error');
+        phoneError.innerText = phone.trim() === '' ? 'Please enter your phone number.' : '';
+    }
 }
 
 function validateSubject() {
