@@ -41,10 +41,12 @@
 - A domain was acquired from GoDaddy for $1.17 to associate with the project.
 ![img_7.png](images/img_7.png)
 ## 10. Backend Implementation
+- Created The API Gateway
+![img_2.png](images/imgAPI.png)
 - AWS Lambda functions will be utilized for backend functionality.
-
+![img.png](images/imgLamda.png)
 - DynamoDB will be used to save and manage data securely.
-
+![img_1.png](images/imgDynamodb.png)
 
 
 
