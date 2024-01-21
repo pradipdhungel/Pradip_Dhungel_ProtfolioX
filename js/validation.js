@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     messageInput.addEventListener('input', validateMessage);
 });
 
-function validateForm() {
+function validateForm(e) {
+    e.preventDefault();
+    console.log(e);
     var name = document.getElementById('cf-name').value;
     var email = document.getElementById('cf-email').value;
     var phone = document.getElementById('cf-phone').value;
@@ -59,8 +61,38 @@ function validateForm() {
     }
 
     // If all validations pass, the form will be submitted
+    const jsonData = {
+        "cfname": name,
+        "cfemail": email,
+        "cfphone": phone,
+        "cfsubject": subject,
+        "cfmessage": message
+    };
+    sendData(jsonData);
     return true;
 }
+
+
+function sendData(jsonData){
+    // API endpoint URL
+    const apiUrl = "https://1sgmyoovv1.execute-api.us-east-1.amazonaws.com/v1/contact-me";
+    // jQuery AJAX
+    $.ajax({
+        url: apiUrl,
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(jsonData),
+        success: function(data) {
+            // Handle success
+            console.log('Response:', data);
+        },
+        error: function(error) {
+            // Handle error
+            console.error('Error:', error);
+        }
+    });
+}
+
 
 function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
