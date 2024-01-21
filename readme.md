@@ -60,7 +60,39 @@
 https://www.pradipdhungel.online/
 ~~~~
 ### Commit History
-
+Commits on Jan 21, 2024
+Added: img for API gateway, lamda and dynamodb of aws
+committed
+7 minutes ago
+·
+Added the apiURL of lamda to add the data in dynamodb and minor changes
+18 minutes ago
+·
+Commits on Jan 20, 2024
+Updated the phone validation
+committed
+yesterday
+·
+Updated the index file
+pradipdhungel
+pradipdhungel
+committed
+yesterday
+Upadate: The blog section of index page
+pradipdhungel
+pradipdhungel
+committed
+yesterday
+·
+Commits on Jan 17, 2024
+change style and make mail to send a message
+pradipdhungel
+pradipdhungel
+committed
+4 days ago
+·
+Commits on Jan 16, 2024
+added .gitignore
 #### Commits on Jan 15, 2024
 - Added some content in readme
   - *Author:* pradipdhungel
