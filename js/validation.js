@@ -60,7 +60,7 @@ function validateForm(e) {
         return false;
     }
 
-    If all validations pass, the form will be submitted
+    //If all validations pass, the form will be submitted
     const jsonData = {
         "cfname": name,
         "cfemail": email,
