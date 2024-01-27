@@ -85,6 +85,8 @@ function sendData(jsonData){
         success: function(data) {
             // Handle success
             console.log('Response:', data);
+            $("#successMsg").css("display", "block");
+
         },
         error: function(error) {
             // Handle error
