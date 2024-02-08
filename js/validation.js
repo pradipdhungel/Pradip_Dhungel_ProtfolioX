@@ -74,6 +74,7 @@ function validateForm(e) {
 
 
 function sendData(jsonData){
+    $('#submit-button').text('In progres....').prop('disabled', true).css('background','#e0d9b6');
     // API endpoint URL
     const apiUrl = "https://1sgmyoovv1.execute-api.us-east-1.amazonaws.com/v1/contact-me";
     // jQuery AJAX
@@ -81,10 +82,11 @@ function sendData(jsonData){
         url: apiUrl,
         type: 'POST',
         contentType: 'application/json',
-        data: JSON.stringify(jsonData),
+        data: JSON.stringify(jsonData),git
         success: function(data) {
             // Handle success
             console.log('Response:', data);
+            $('#submit-button').text('Send').prop('disabled', false).css('background','#ffd500');
             $("#successMsg").css("display", "block");
 
         },
