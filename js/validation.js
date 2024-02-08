@@ -82,7 +82,7 @@ function sendData(jsonData){
         url: apiUrl,
         type: 'POST',
         contentType: 'application/json',
-        data: JSON.stringify(jsonData),git
+        data: JSON.stringify(jsonData),
         success: function(data) {
             // Handle success
             console.log('Response:', data);
